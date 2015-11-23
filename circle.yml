@@ -7,3 +7,8 @@ machine:
 checkout:
   post:
     - mkdir -p tmp
+
+database:
+  post:
+    - bundle exec rake cequel:keyspace:create
+    - bundle exec rake cequel:migrate
