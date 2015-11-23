@@ -13,7 +13,7 @@ describe User do
   end
 
   it 'has gender' do
-    expect(subject.last_name).to eq('m') 
+    expect(subject.sex).to eq('m') 
   end
 
 end
